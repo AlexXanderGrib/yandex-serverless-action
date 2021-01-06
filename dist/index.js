@@ -28031,12 +28031,12 @@ function parseIgnoreGlobPatterns(ignoreString) {
 function parseEnvironmentVariables(env) {
     _actions_core__WEBPACK_IMPORTED_MODULE_0__.info(`Environment string: "${env}"`);
     const envObject = {};
-    const kvs = env.split(/,\s+/);
+    const kvs = env.split(/,\s*/);
     kvs.forEach((kv) => {
         const eqIndex = kv.indexOf("=");
         const key = kv.substr(0, eqIndex);
         const value = kv.substr(eqIndex + 1);
-        envObject[key] = value;
+        envObject[key.trim()] = value;
     });
     _actions_core__WEBPACK_IMPORTED_MODULE_0__.info(`EnvObject: "${JSON.stringify(envObject)}"`);
     return envObject;
