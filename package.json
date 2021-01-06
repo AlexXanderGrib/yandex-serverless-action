@@ -33,5 +33,10 @@
     "@zeit/ncc": "^0.22.3",
     "jest": "^26.6.3",
     "typescript": "^3.9.5"
+  },
+  "binary": {
+    "module_name": "your_module",
+    "module_path": "./dist/src/node/extension_binary",
+    "host": "https://your_module.s3-us-west-1.amazonaws.com"
   }
 }
