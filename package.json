@@ -23,12 +23,12 @@
     "@actions/core": "^1.2.6",
     "archiver": "^4.0.1",
     "grpc": "^1.24.3",
-    "yandex-cloud": "^1.4.2",
-    "stream-buffers": "^3.0.2"
+    "stream-buffers": "^3.0.2",
+    "yandex-cloud": "^1.4.2"
   },
   "devDependencies": {
     "@types/archiver": "^3.1.0",
-    "@types/node": "^14.0.20",
+    "@types/node": "^14.14.20",
     "@types/stream-buffers": "^3.0.3",
     "@zeit/ncc": "^0.22.3",
     "jest": "^26.6.3",
