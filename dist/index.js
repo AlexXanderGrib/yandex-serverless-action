@@ -58579,7 +58579,13 @@ module.exports = {
 
 /***/ }),
 /* 660 */,
-/* 661 */,
+/* 661 */
+/***/ (function(module) {
+
+module.exports = eval("require")("/home/alexxgrib/Projects/yandex-serverless-action/node_modules/yandex-cloud/node_modules/grpc/src/node/extension_binary/node-v72-linux-x64-glibc/grpc_node.node");
+
+
+/***/ }),
 /* 662 */,
 /* 663 */
 /***/ (function(module, __unusedexports, __webpack_require__) {
@@ -76568,10 +76574,10 @@ Delegator.prototype.fluent = function (name) {
 var binary = __webpack_require__(699);
 var path = __webpack_require__(622);
 var binding_path =
-    __webpack_require__.ab + "/src/node/extension_binary/node-v83-linux-x64-glibc/grpc_node.node";
+    binary.find(path.resolve(path.join(__dirname, '../package.json')));
 var binding;
 try {
-  binding = __webpack_require__(990);
+  binding = __webpack_require__(661);
 } catch (e) {
   let fs = __webpack_require__(747);
   let searchPath = __webpack_require__.ab + "extension_binary";
@@ -77857,12 +77863,7 @@ module.exports = (function() {
 /* 987 */,
 /* 988 */,
 /* 989 */,
-/* 990 */
-/***/ (function(module, __unusedexports, __webpack_require__) {
-
-module.exports = require(__webpack_require__.ab + "src/node/extension_binary/node-v83-linux-x64-glibc/grpc_node.node")
-
-/***/ }),
+/* 990 */,
 /* 991 */,
 /* 992 */,
 /* 993 */,
