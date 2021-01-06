@@ -247,12 +247,12 @@ function parseEnvironmentVariables(env: string): { [s: string]: string } {
   core.info(`Environment string: "${env}"`);
 
   const envObject = {};
-  const kvs = env.split(/,\s+/);
+  const kvs = env.split(/,\s*/);
   kvs.forEach((kv) => {
     const eqIndex = kv.indexOf("=");
     const key = kv.substr(0, eqIndex);
     const value = kv.substr(eqIndex + 1);
-    envObject[key] = value;
+    envObject[key.trim()] = value;
   });
 
   core.info(`EnvObject: "${JSON.stringify(envObject)}"`);
